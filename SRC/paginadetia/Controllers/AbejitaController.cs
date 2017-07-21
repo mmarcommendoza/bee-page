@@ -8,5 +8,10 @@ namespace paginadetia.Controllers
 {
     public class AbejitaController : Controller
     {
+       public string Detail()
+        {
+            return "Bienvenidos a la pagina de Lupita!";
+        }
+
     }
 }

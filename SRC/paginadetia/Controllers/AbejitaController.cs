@@ -8,9 +8,14 @@ namespace paginadetia.Controllers
 {
     public class AbejitaController : Controller
     {
-       public string Detail()
+       public ActionResult Detalles()
         {
-            return "Bienvenidos a la pagina de Lupita!";
+            if (DateTime.Today.DayOfWeek== DayOfWeek.Thursday)
+            {
+                return new RedirectResult("/");
+            }
+            return Content("El comienzo de esta nueva pagina para poder escribir cosas feas en el internet acerca de LALO CARA DE MESOPLAS, me tienes emperrado");
+
         }
 
     }
